@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dr. Selvakumar | AI & DS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI';
+            background: black;
+            color: white;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            width: 100%;
+            background: rgba(0,0,0,0.8);
+            padding: 12px;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        /* HERO VIDEO */
+        .hero {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .hero video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .overlay-dark {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            top: 40%;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: 2px solid white;
+            color: white;
+            text-decoration: none;
+            margin: 5px;
+        }
+
+        .btn-primary {
+            background: red;
+            border: none;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        /* PROFILE CARDS */
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .team-card {
+            width: 280px;
+            margin: 15px;
+            background: #111;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: 0.4s;
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .image-box {
+            position: relative;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+        }
+
+        .badge {
+            position: absolute;
+            bottom: 80px;
+            left: 10px;
+            background: red;
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+
+        .name {
+            position: absolute;
+            bottom: 40px;
+            left: 10px;
+            font-size: 18px;
+        }
+
+        .content {
+            padding: 10px;
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        /* CONTACT FORM */
+        input, textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        footer {
+            background: #111;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <a href="#">Home</a>
+    <a href="#team">Profile</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO VIDEO -->
+<div class="hero">
+    <video autoplay muted loop>
+        <source src="bgvideo.mp4" type="video/mp4">
+    </video>
+    <div class="overlay-dark"></div>
+
+    <div class="hero-content" data-aos="fade-up">
+        <h1><span class="red">SELVA</span>KUMAR</h1>
+        <p>AI & Data Science | Educator | Innovator</p>
+        <a href="#projects" class="btn btn-primary">View Work</a>
+        <a href="resume.pdf" class="btn">Download CV</a>
+    </div>
+</div>
+
+<!-- PROFILE -->
+<section id="team">
+    <h2>Profile</h2>
+
+    <div class="team-container">
+
+        <div class="team-card">
+            <div class="image-box">
+                <img src="photo1.jpg">
+                <div class="overlay"></div>
+                <span class="badge">PROFESSOR</span>
+                <div class="name">Dr. Selvakumar</div>
+            </div>
+            <div class="content">
+                <p>AI & DS expert focused on innovation and teaching.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECT -->
+<section id="projects">
+    <h2>Projects</h2>
+    <p>AI Classroom Platform</p>
+    <a href="https://selva-chatbot-aids-selvakumarownership.streamlit.app/" class="btn btn-primary">View Project</a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea placeholder="Your Message"></textarea><br>
+
+    <button class="btn btn-primary">Send</button>
+</section>
+
+<footer>
+    <p>© 2026 Dr. Selvakumar</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
