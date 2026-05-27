@@ -290,6 +290,63 @@ font-size:40px;
 color:#8b5cf6;
 }
 
+/* EDUCATION SECTION */
+.education-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.education-card{
+background:rgba(255,255,255,0.05);
+padding:30px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,0.1);
+backdrop-filter:blur(10px);
+transition:0.4s;
+}
+
+.education-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px #8b5cf6;
+}
+
+.education-card h3{
+font-size:22px;
+color:#8b5cf6;
+margin-bottom:10px;
+}
+
+.education-card h4{
+font-size:18px;
+margin-bottom:10px;
+color:#cbd5e1;
+}
+
+.education-card p{
+font-size:16px;
+line-height:1.6;
+color:#e2e8f0;
+}
+
+/* SCROLL ANIMATION SUPPORT */
+.section{
+opacity:0;
+transform:translateY(40px);
+transition:all 0.8s ease;
+}
+
+.section.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* NAVBAR STICKY EFFECT */
+.navbar.sticky{
+background:rgba(0,0,0,0.9);
+box-shadow:0 0 20px rgba(139,92,246,0.3);
+}
+
 @media(max-width:768px){
 
 .navbar{
@@ -334,59 +391,3 @@ font-size:38px;
 }
 
 }
-```
-
----
-
-# COMPLETE script.js
-
-```javascript
-AOS.init({
-duration:1500
-});
-
-var typed = new Typed('.typing', {
-
-strings:[
-'Assistant Professor',
-'AI Researcher',
-'Machine Learning Expert',
-'Cryptography Specialist',
-'Java Developer',
-'PhD Scholar'
-],
-
-typeSpeed:80,
-backSpeed:50,
-loop:true
-
-});
-
-particlesJS('particles-js', {
-
-particles: {
-
-number: {
-value: 80
-},
-
-size: {
-value: 3
-},
-
-color: {
-value: '#8b5cf6'
-},
-
-line_linked: {
-enable: true,
-color: '#8b5cf6'
-},
-
-move: {
-speed: 2
-}
-
-}
-
-});
