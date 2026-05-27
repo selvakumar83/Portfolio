@@ -278,16 +278,43 @@ font-size:22px;
 text-decoration:none;
 }
 
-footer{
-text-align:center;
-padding:50px;
-background:black;
-margin-top:50px;
+/* =========================
+FOOTER CONTACT
+========================= */
+
+.footer-contact{
+
+margin-top:20px;
+display:flex;
+flex-direction:column;
+gap:12px;
+align-items:center;
+
 }
 
-footer h2{
-font-size:40px;
+.footer-contact p{
+
+font-size:18px;
+color:#cbd5e1;
+display:flex;
+align-items:center;
+gap:10px;
+
+}
+
+.footer-contact i{
+
 color:#8b5cf6;
+font-size:20px;
+
+}
+
+.copyright{
+
+margin-top:20px;
+font-size:16px;
+color:#94a3b8;
+
 }
 
 @media(max-width:768px){
